@@ -18,7 +18,6 @@ class _InputPageState extends State<InputPage> {
 
   //color updation for male and female containers
   //male = 1 and female = 2
-
   void updateColor(int gender) {
     if (gender == 1) {
       mailCardColor = activeCardColor;
