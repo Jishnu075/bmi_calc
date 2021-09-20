@@ -8,3 +8,7 @@ const kLabelTextStyle = TextStyle(
   color: Color(0xFF8D8E98),
   fontSize: 18.0,
 );
+
+const kActiveTrackColor = Colors.white;
+const kInactiveTrackColor = Color(0xFF8D8E98);
+const kOverlayColor = Color(0x29EB1555);
