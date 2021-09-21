@@ -14,31 +14,42 @@ class ResultPage extends StatelessWidget {
         title: Text('BMI CALCULATOR'),
       ),
       body: Column(
-        // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Text('Your Result', style: TextStyle(fontSize: 50.0)),
+          Text(
+            'Your Result',
+            style: kLargeTitleTextStyle,
+          ),
           Expanded(
+            flex: 5,
             child: ReusableCard(
               colour: kActiveCardColor,
               cardChild: Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Text('OVERWEIGHT'),
-                  Text('26'),
-                  Text('wferofi weofif wqfej '),
+                  Text(
+                    'OVERWEIGHT',
+                    style: kGreenTextStyle,
+                  ),
+                  Text(
+                    '26',
+                    style: kResultNumberTextStyle,
+                  ),
+                  Text(
+                    'wferofi weofif wqfej ',
+                    style: kNormalTextStyle,
+                  ),
                 ],
               ),
             ),
-            // cardChild: ,),
           ),
-          Container(
-            height: 80.0,
-            width: double.infinity,
-            color: Colors.red,
-            padding: EdgeInsets.only(bottom: 20.0),
-            child: Center(
-              child: Text('Re-Calculate'),
+          Expanded(
+            child: Container(
+              height: 50.0,
+              color: kBottomContainerColor,
+              margin: EdgeInsets.only(top: 10.0),
             ),
           ),
         ],
