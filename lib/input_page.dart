@@ -153,7 +153,7 @@ class _InputPageState extends State<InputPage> {
                               ),
                             ),
                             SizedBox(
-                              width: 15.0,
+                              width: 10.0,
                             ),
                             RoundedIconButton(
                               onPressed: () {
@@ -199,7 +199,7 @@ class _InputPageState extends State<InputPage> {
                               },
                             ),
                             SizedBox(
-                              width: 15.0,
+                              width: 10.0,
                             ),
                             RoundedIconButton(
                               child: Icon(FontAwesomeIcons.plus),
@@ -220,16 +220,25 @@ class _InputPageState extends State<InputPage> {
               ],
             ),
           ),
-          Container(
-            alignment: AlignmentDirectional.center,
-            margin: EdgeInsets.only(top: 10.0),
-            color: kBottomContainerColor,
-            height: 80.0,
-            width: double.infinity,
-            child: Text(
-              'Calculate BMI',
-              style: TextStyle(
-                fontSize: 30.0,
+          GestureDetector(
+            onTap: () {
+              Navigator.pushNamed(context, '/result_page');
+
+              // Navigator.push(context, MaterialPageRoute(builder: (context) {
+              //   return ResultPage();
+              // }));
+            },
+            child: Container(
+              alignment: AlignmentDirectional.center,
+              margin: EdgeInsets.only(top: 10.0),
+              color: kBottomContainerColor,
+              height: 80.0,
+              width: double.infinity,
+              child: Text(
+                'Calculate BMI',
+                style: TextStyle(
+                  fontSize: 30.0,
+                ),
               ),
             ),
           ),
@@ -239,6 +248,7 @@ class _InputPageState extends State<InputPage> {
   }
 }
 
+//Custom Widget
 class RoundedIconButton extends StatelessWidget {
   RoundedIconButton({this.child, required this.onPressed});
   final Widget? child;
