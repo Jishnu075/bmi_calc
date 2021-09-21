@@ -3,6 +3,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'icon_content.dart';
 import 'reusable_card.dart';
 import 'constants.dart';
+import 'result_page.dart';
 
 enum Gender {
   male,
@@ -222,11 +223,11 @@ class _InputPageState extends State<InputPage> {
           ),
           GestureDetector(
             onTap: () {
-              Navigator.pushNamed(context, '/result_page');
+              // Navigator.pushNamed(context, '/result_page');
 
-              // Navigator.push(context, MaterialPageRoute(builder: (context) {
-              //   return ResultPage();
-              // }));
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return ResultPage();
+              }));
             },
             child: Container(
               alignment: AlignmentDirectional.center,
