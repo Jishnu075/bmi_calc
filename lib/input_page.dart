@@ -225,20 +225,23 @@ class _InputPageState extends State<InputPage> {
             onTap: () {
               // Navigator.pushNamed(context, '/result_page');
 
-              Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return ResultPage();
-              }));
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => ResultPage(),
+                ),
+              );
             },
             child: Container(
-              alignment: AlignmentDirectional.center,
               margin: EdgeInsets.only(top: 10.0),
               color: kBottomContainerColor,
               height: 80.0,
               width: double.infinity,
-              child: Text(
-                'Calculate BMI',
-                style: TextStyle(
-                  fontSize: 30.0,
+              padding: EdgeInsets.only(bottom: 20.0),
+              child: Center(
+                child: Text(
+                  'CALCULATE',
+                  style: kLargeButtonTextStyle,
                 ),
               ),
             ),

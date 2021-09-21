@@ -16,3 +16,8 @@ const kNumberTextStyle = TextStyle(
 const kActiveTrackColor = Colors.white;
 const kInactiveTrackColor = Color(0xFF8D8E98);
 const kOverlayColor = Color(0x29EB1555);
+
+const kLargeButtonTextStyle = TextStyle(
+  fontSize: 25.0,
+  fontWeight: FontWeight.bold,
+);
