@@ -29,10 +29,10 @@ const kGreenTextStyle = TextStyle(
   color: Color(0xFF24D876),
   fontWeight: FontWeight.bold,
 );
-const kResultNumberTextStyle = TextStyle(
-  fontSize: 90.0,
+const kBMITextStyle = TextStyle(
+  fontSize: 100.0,
   fontWeight: FontWeight.bold,
 );
-const kNormalTextStyle = TextStyle(
+const kBodyTextStyle = TextStyle(
   fontSize: 18.0,
 );

@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'icon_content.dart';
-import 'reusable_card.dart';
-import 'constants.dart';
+import 'package:bmi_calc/components/icon_content.dart';
+import 'package:bmi_calc/components/reusable_card.dart';
+import 'package:bmi_calc/constants.dart';
 import 'result_page.dart';
+import 'package:bmi_calc/components/bottom_button.dart';
+import 'package:bmi_calc/components/rounded_icon_button.dart';
 
 enum Gender {
   male,
@@ -221,10 +223,8 @@ class _InputPageState extends State<InputPage> {
               ],
             ),
           ),
-          GestureDetector(
+          BottomButton(
             onTap: () {
-              // Navigator.pushNamed(context, '/result_page');
-
               Navigator.push(
                 context,
                 MaterialPageRoute(
@@ -232,44 +232,10 @@ class _InputPageState extends State<InputPage> {
                 ),
               );
             },
-            child: Container(
-              margin: EdgeInsets.only(top: 10.0),
-              color: kBottomContainerColor,
-              height: 80.0,
-              width: double.infinity,
-              padding: EdgeInsets.only(bottom: 20.0),
-              child: Center(
-                child: Text(
-                  'CALCULATE',
-                  style: kLargeButtonTextStyle,
-                ),
-              ),
-            ),
+            bottomText: 'CALCULATE',
           ),
         ],
       ),
-    );
-  }
-}
-
-//Custom Widget
-class RoundedIconButton extends StatelessWidget {
-  RoundedIconButton({this.child, required this.onPressed});
-  final Widget? child;
-  final VoidCallback onPressed;
-
-  @override
-  Widget build(BuildContext context) {
-    return RawMaterialButton(
-      child: child,
-      constraints: BoxConstraints.tightFor(
-        width: 56.0,
-        height: 56.0,
-      ),
-      elevation: 6.0,
-      onPressed: onPressed,
-      shape: CircleBorder(),
-      fillColor: Color(0xFF4C4F5E),
     );
   }
 }

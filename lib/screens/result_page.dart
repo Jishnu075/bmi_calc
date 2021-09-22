@@ -1,6 +1,6 @@
 import 'package:bmi_calc/constants.dart';
 
-import 'reusable_card.dart';
+import '../components/reusable_card.dart';
 import 'package:flutter/material.dart';
 
 class ResultPage extends StatelessWidget {
@@ -34,12 +34,12 @@ class ResultPage extends StatelessWidget {
                     style: kGreenTextStyle,
                   ),
                   Text(
-                    '26',
-                    style: kResultNumberTextStyle,
+                    '26.4',
+                    style: kBMITextStyle,
                   ),
                   Text(
                     'wferofi weofif wqfej ',
-                    style: kNormalTextStyle,
+                    style: kBodyTextStyle,
                   ),
                 ],
               ),
