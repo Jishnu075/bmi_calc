@@ -149,7 +149,9 @@ class _InputPageState extends State<InputPage> {
                             RoundedIconButton(
                               onPressed: () {
                                 setState(() {
-                                  weight--;
+                                  if (weight > 1) {
+                                    weight--;
+                                  }
                                 });
                               },
                               child: Icon(
