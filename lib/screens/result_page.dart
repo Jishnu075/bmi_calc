@@ -1,3 +1,4 @@
+import 'package:bmi_calc/components/bottom_button.dart';
 import 'package:bmi_calc/constants.dart';
 
 import '../components/reusable_card.dart';
@@ -45,13 +46,12 @@ class ResultPage extends StatelessWidget {
               ),
             ),
           ),
-          Expanded(
-            child: Container(
-              height: 50.0,
-              color: kBottomContainerColor,
-              margin: EdgeInsets.only(top: 10.0),
-            ),
-          ),
+          BottomButton(
+            bottomText: 'RECALCULATE',
+            onTap: () {
+              Navigator.pop(context);
+            },
+          )
         ],
       ),
     );
