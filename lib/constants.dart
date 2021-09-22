@@ -27,6 +27,7 @@ const kLargeTitleTextStyle = TextStyle(
 );
 const kGreenTextStyle = TextStyle(
   color: Color(0xFF24D876),
+  fontSize: 22.0,
   fontWeight: FontWeight.bold,
 );
 const kBMITextStyle = TextStyle(
@@ -34,5 +35,5 @@ const kBMITextStyle = TextStyle(
   fontWeight: FontWeight.bold,
 );
 const kBodyTextStyle = TextStyle(
-  fontSize: 18.0,
+  fontSize: 22.0,
 );
