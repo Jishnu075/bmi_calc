@@ -20,3 +20,9 @@ UI Design from https://dribbble.com/shots/4585382-Simple-BMI-Calculator
 </tr>
 
 </table>
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+  
